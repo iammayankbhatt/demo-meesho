@@ -4,9 +4,14 @@ import { fileURLToPath } from 'url'
 
 import { build } from 'vite'
 
-await build()
-
-console.info('Client production build completed successfully.')
+try {
+  await build()
+  console.info('Client production build completed successfully.')
+} catch (error) {
+  console.error('VITE PRODUCTION BUILD FAILED:')
+  console.error(error?.stack || error)
+  process.exitCode = 1
+}
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
