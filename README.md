@@ -1,4 +1,4 @@
-# Meesho E-Commerce Platform ("Haat")
+# Meesho E-Commerce Platform ("Magic")
 
 A fast, responsive, scalable value-focused e-commerce web platform inspired by Meesho.
 
